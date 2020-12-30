@@ -1,4 +1,8 @@
-# Setup Virtual Machines for the Introduction to Docker and Kubernetes Class
+# Introduction to Docker and Kubernetes Course
+
+## Overview
+
+The following instructions are customized for the Google Cloud Platform. Each student will need two virtual machines. The first VM is a Windows Server VM which will be primarily used as a Remote Desktop environment for accessing the second Linux VM. This first Windows Server is being used so it can be access through a browser-based LMS system. The second VM, the Linux server, is where most of the class work will be done.
 
 The following instructions are for `student1`. Repeat for each student in the class incrementing the number each time. For example, the second student would be `student2`. Please create an instance for the `instructor` as well.
 
