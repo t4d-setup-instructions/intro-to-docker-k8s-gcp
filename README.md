@@ -60,15 +60,15 @@ The following instructions are for `student1`. Repeat for each student in the cl
 
     - Note: Leave the password empty.
 
-```powershell
-ssh-keygen -t rsa -f $HOME\.ssh\student1-linux-instance -C student1
-```
+    ```powershell
+    ssh-keygen -t rsa -f $HOME\.ssh\student1-linux-instance -C student1
+    ```
 
   - Use the certificate to connect to the Linux server
 
-```powershell
-ssh -i $HOME\.ssh\student1-linux-instance <LINUX_SERVER_EXTERNAL_IP_ADDRESS>
-```
+    ```powershell
+    ssh -i $HOME\.ssh\student1-linux-instance <LINUX_SERVER_EXTERNAL_IP_ADDRESS>
+    ```
 
     - The user should be logged in and presented with the Linux server terminal prompt
 
