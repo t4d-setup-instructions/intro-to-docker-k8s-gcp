@@ -20,20 +20,22 @@ The following instructions are for `student1`. Repeat for each student in the cl
   - Size: `100` GB
 
 - Setup a Windows Password
+  - In the instance table, click on the down-arrow next to the `RDP` link in the `Connect` column
+  - Click `Set Windows Password`
   - Specify a username: `student1`
-  - Copy the password and save it
-  - Download the RDP File
-  - Open an RDP Session with the RDP File
+  - A password will be generated, please copy the password and save it
+  - Next, click on the down-arrow again, and click `Download the RDP file`, download and save the file
+  - Using the Microsoft Remote Desktop client, open an RDP Session with the downloaded RDP file
 
 - Disable IE Enhanced Security Configuration
-  - Open Server Manager
-  - Click on Local Server on the sidebar menu
+  - Open `Server Manager`
+  - Click on `Local Server` on the sidebar menu
   - In the top box, second column, second row group, third setting down, `IE Enhanced Security Configuration`, click on `On`
-  - Disable the enhanced security for the admin and normal users
+  - Disable the enhanced security for the admin and normal users, click `Ok`
 
-- Open Internet Explorer, download and install Chrome: [https://www.google.com/chrome](https://www.google.com/chrome)
+- Open Internet Explorer, download and install Google Chrome: [https://www.google.com/chrome](https://www.google.com/chrome)
 
-- Open Internet Explorer, download and install VS Code: [https://code.visualstudio.com](https://code.visualstudio.com)
+- Open Google Chrome, download and install VS Code: [https://code.visualstudio.com](https://code.visualstudio.com)
   - Accept the defaults in the installation steps, for the "Select Additional Tasks" step, select all five options, complete the install
 
 
@@ -51,7 +53,6 @@ The following instructions are for `student1`. Repeat for each student in the cl
   - Size: `100` GB
 
   Note: Once the instance is created, copy the external IP address. It will be used later.
-
 
 - Setup Linux Login
   - Start a PowerShell Session. Windows Server 2019 comes with PowerShell Core 7. Please use PowerShell Core 7
