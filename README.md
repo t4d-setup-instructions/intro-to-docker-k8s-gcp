@@ -83,15 +83,15 @@ sudo apt upgrade
 ## Student Information for their Virtual Machines (Repeat for each Student)
 
 - Please provide a zip file for each student which contains the following:
- - The RDP file
- - Server Information File
+  - The RDP file
+  - Server Information File
 
 - The server information file will need the following information:
- - Windows Server username
- - Windows Server password
- - Windows Server external IP address
- - Linux Server external IP address
- - Information needed to connect to the Windows Server VM through the web browser
+  - Windows Server username
+  - Windows Server password
+  - Windows Server external IP address
+  - Linux Server external IP address
+  - Information needed to connect to the Windows Server VM through the web browser
 
 - Note: Please provide the Window Server RDP file in case a student is using a personal machine and want to connect to the Windows Server without having to use the web browser.
 
