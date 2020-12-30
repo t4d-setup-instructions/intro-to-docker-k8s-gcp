@@ -64,7 +64,7 @@ The following instructions are for `student1`. Repeat for each student in the cl
     ssh-keygen -t rsa -f $HOME\.ssh\student1-linux-instance -C student1
     ```
 
-  - Use the certificate to connect to the Linux server
+  - Use the certificate, and the Linux server's external IP address to connect to the Linux server
 
     ```powershell
     ssh -i $HOME\.ssh\student1-linux-instance <LINUX_SERVER_EXTERNAL_IP_ADDRESS>
