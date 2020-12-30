@@ -2,7 +2,7 @@
 
 ## Overview
 
-The following instructions are customized for the Google Cloud Platform. Each student will need two virtual machines. The first VM is a Windows Server VM which will be primarily used as a Remote Desktop environment for accessing the second Linux VM. This first Windows Server is being used so it can be access through a browser-based LMS system. The second VM, the Linux server, is where most of the class work will be done.
+The following instructions are customized for the Google Cloud Platform. Each student will need two virtual machines (VM). The first VM is a Windows Server VM which will be primarily used as a remote desktop environment for accessing the second VM, a Linux server. The Windows Server provides a remote desktop experience compatible with a browser-based LMS system. The second VM, the Linux server, is where most of the class work will be done through SSH.
 
 The following instructions are for `student1`. Repeat for each student in the class incrementing the number each time. For example, the second student would be `student2`. Please create an instance for the `instructor` as well.
 
@@ -50,19 +50,23 @@ The following instructions are for `student1`. Repeat for each student in the cl
   - Boot disk type: `SSD persistent disk`
   - Size: `100` GB
 
+  Note: Once the instance is created, copy the external IP address. It will be used later.
+
 
 - Setup Linux Login
-  - Start a PowerShell Session.
+  - Start a PowerShell Session. Windows Server 2019 comes with PowerShell Core 7. Please use PowerShell Core 7
   - Create an SSH certificate on the Windows Server
 
     - Note: Leave the password empty.
 
 ```powershell
+ssh-keygen -t rsa -f $HOME\.ssh\student1-linux-instance -C student1
 ```
 
   - Use the certificate to connect to the Linux server
 
 ```powershell
+ssh -i $HOME\.ssh\student1-linux-instance <LINUX_SERVER_EXTERNAL_IP_ADDRESS>
 ```
 
     - The user should be logged in and presented with the Linux server terminal prompt
