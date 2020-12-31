@@ -72,7 +72,7 @@ The following instructions are for `student1`. Repeat for each student in the cl
   - Use the certificate, and the Linux server's external IP address to connect to the Linux server
 
     ```powershell
-    ssh -i $HOME\.ssh\student1-linux-instance <LINUX_SERVER_EXTERNAL_IP_ADDRESS>
+    ssh -i $HOME\.ssh\student1-linux-instance student1@<LINUX_SERVER_EXTERNAL_IP_ADDRESS>
     ```
 
     - The user should be logged in and presented with the Linux server terminal prompt
