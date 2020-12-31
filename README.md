@@ -64,6 +64,11 @@ The following instructions are for `student1`. Repeat for each student in the cl
     ssh-keygen -t rsa -f $HOME\.ssh\student1-linux-instance -C student1
     ```
 
+  - Edit the virtual machine instance.
+  - Scroll down to "You have 0 SSH keys", and click "Show and edit"
+  - Copy and paste the public key.
+  - Scroll to the bottom and click "Save".
+
   - Use the certificate, and the Linux server's external IP address to connect to the Linux server
 
     ```powershell
